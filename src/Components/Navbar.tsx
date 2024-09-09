@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import logo from "../assets/BFCS LOGO/BFCS III.png";
@@ -7,7 +7,6 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { MenuFoldOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
 
 interface MenuItem {
   label?: string;
