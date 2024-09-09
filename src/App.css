@@ -13,14 +13,7 @@
 .list {
   list-style-type: square;
 }
-/* .homeBg {
-  background: url(./assets/FloorMopping.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  background-position: center;
-  background-attachment: fixed;
-} */
+
 .navbar {
   @apply flex justify-between items-center p-4 bg-gray-100;
 }
@@ -40,21 +33,112 @@
 .submenu {
   @apply absolute bg-white shadow-md z-10 top-[60px];
 }
+.hide {
+  display: none;
+}
 
 @media (max-width: 488px) {
-  nav {
-    flex-direction: column;
+  .submenu {
+    @apply absolute bg-white shadow-md z-10 top-[80px];
+  }
+  .h1 {
+    font-size: 25px;
+  }
+  .h2 {
+    font-size: 13px;
+  }
+  .px {
+    @apply px-[20px];
+  }
+  .py {
+    @apply py-2;
+  }
+  .gap {
+    gap: 7px;
+    padding: 0px 10px 10px 10px;
+  }
+  .none {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+  .p0 {
+    padding: 0px;
+  }
+  .p5{
+    @apply p-5
+  }
+  .w100 {
+    width: 100%;
+  }
+  .line-height {
+    line-height: 30px;
+  }
+  .line-height1 {
+    line-height: 0px;
+  }
+
+  .carouselItems img,
+  .carouselItem img {
+    width: 20%;
   }
   .carouselItems {
-    left: 10px;
-    top: 200px;
-  }
-  .carouselItemsform {
+    margin-top: 200px;
+    padding: 0px;
     flex-direction: column;
-    top: 100px;
-    left: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
-  .carouselItems h1 {
+
+  .carouselItems h1,
+  .carouselItem h1 {
     font-size: 25px;
+    padding: 10px;
+  }
+  .carouselItems p {
+    font-size: 16px;
+  }
+  .carouselItem p {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .btnMobile {
+    width: 50%;
+  }
+  .btnMobileW {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .p20 {
+    @apply p-[20px];
+  }
+
+  .aboutiMG {
+    flex-direction: column;
+  }
+  .aboutiMG img {
+    width: 100%;
+  }
+  .WCU {
+    justify-content: center;
+    align-items: center;
+  }
+  .items li,
+  .h3 {
+    font-size: 12px;
+  }
+  .carouselItem {
+    margin-top: 80px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
 }

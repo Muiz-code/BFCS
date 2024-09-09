@@ -22,12 +22,12 @@ const Footer = () => {
   }, []);
   return (
     <div className="flex flex-col w-[100%]">
-      <div className="flex justify-between p-[50px]">
+      <div className="flex justify-between p-[50px] p0 w100">
         <div className="flex flex-col gap-5">
-          <h1 className="bg-[#005883] text-white px-[100px] py-3">
+          <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             NAVIGATION
           </h1>
-          <ul className="flex flex-col gap-[30px]">
+          <ul className="flex flex-col gap-[30px] items gap">
             <li className="hover:scale-105 flex gap-3 hover:underline">
               <RightCircleOutlined />
               <a href="">HOME</a>
@@ -51,10 +51,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="bg-[#005883] text-white px-[100px] py-3">
+          <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             CONTACT US
           </h1>
-          <ul className="flex flex-col gap-[30px]">
+          <ul className="flex flex-col gap-[30px] items gap">
             <li>
               <a href="">
                 <PhoneOutlined /> 020345677888
@@ -82,8 +82,10 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h1 className="bg-[#005883] text-white px-[100px] py-3">FOLLOW US</h1>
-          <div className="flex gap-[30px]">
+          <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
+            FOLLOW US
+          </h1>
+          <div className="flex gap-[30px] gap">
             <a href="">
               <FacebookOutlined />
             </a>
@@ -101,12 +103,14 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-5">
-          <h1 className="bg-[#005883] text-white px-[100px] py-3">REACH OUT</h1>
+        <div className="flex flex-col gap-5 none">
+          <h1 className="bg-[#005883] text-white px-[100px] py-3 h1">
+            REACH OUT
+          </h1>
           <Form />
         </div>
       </div>
-      <div className="flex justify-center bg-[#005883] p-4 text-white">
+      <div className="flex justify-center bg-[#005883] p-4 text-white h2">
         <p>&#0169; 2024 BFCS. ALL RIGHT RESERVED. LOCATION. XML</p>
       </div>
     </div>
