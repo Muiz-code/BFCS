@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="flex p-5 justify-between place-items-center bg-white fixed z-[1000]"
+      className="flex p-5 justify-between place-items-center bg-white fixed w-[100%] z-[1000]"
       data-aos="fade-down"
     >
       <div className="w-[15%]">

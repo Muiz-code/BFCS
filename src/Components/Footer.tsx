@@ -9,10 +9,19 @@ import {
   YoutubeOutlined,
 } from "@ant-design/icons";
 import Form from "./Form";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col w-[100%]">
       <div className="flex justify-between p-[50px]">
         <div className="flex flex-col gap-5">
           <h1 className="bg-[#005883] text-white px-[100px] py-3">
@@ -97,7 +106,7 @@ const Footer = () => {
           <Form />
         </div>
       </div>
-      <div className="flex justify-center bg-[#005883] p-4">
+      <div className="flex justify-center bg-[#005883] p-4 text-white">
         <p>&#0169; 2024 BFCS. ALL RIGHT RESERVED. LOCATION. XML</p>
       </div>
     </div>

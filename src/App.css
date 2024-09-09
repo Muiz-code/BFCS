@@ -41,4 +41,20 @@
   @apply absolute bg-white shadow-md z-10 top-[60px];
 }
 
-
+@media (max-width: 488px) {
+  nav {
+    flex-direction: column;
+  }
+  .carouselItems {
+    left: 10px;
+    top: 200px;
+  }
+  .carouselItemsform {
+    flex-direction: column;
+    top: 100px;
+    left: 10px;
+  }
+  .carouselItems h1 {
+    font-size: 25px;
+  }
+}

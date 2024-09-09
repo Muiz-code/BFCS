@@ -28,12 +28,12 @@ const CarouselSlide: React.FC = () => {
   }, []);
   return (
     <Carousel autoplay style={{ fontFamily: "SUSE" }}>
-      <div className="relative">
+      <div className="relative carouselContainer">
         <img src={img1} className="w-screen" style={contentStyle} />
-        <div className="bg-black absolute top-0 opacity-45 h-[100vh] w-screen"></div>
+        <div className="bg-black absolute top-0 opacity-45 h-[100vh] w-[100%] carouselBg"></div>
         <div
           data-aos="fade-right"
-          className="absolute top-[200px] left-[100px] flex flex-col gap-[20px]"
+          className="absolute top-[200px] left-[100px] flex flex-col gap-[20px] carouselItems"
         >
           <img src={logo} className="w-[10%]" alt="" />
           <h1 className="text-[70px] text-white font-extrabold line-height">
@@ -51,9 +51,9 @@ const CarouselSlide: React.FC = () => {
       <div className="relative">
         <img src={img2} className="w-screen" style={contentStyle} />
         <div className="bg-black absolute top-0 opacity-45 h-[100vh] w-screen"></div>
-        <div className="absolute top-[200px] left-[100px] flex flex-col gap-[20px]">
+        <div className="absolute top-[200px] left-[100px] flex flex-col gap-[20px] carouselItems">
           <img src={logo} className="w-[10%]" alt="" />
-          <div data-aos="fade-right" className="flex flex-col gap-[5px]">
+          <div data-aos="fade-right" className="flex flex-col gap-[5px] ">
             <h1 className="text-[70px] text-white font-extrabold">
               WHY CHOOSE US
             </h1>
@@ -85,12 +85,12 @@ const CarouselSlide: React.FC = () => {
         <div className="bg-black absolute top-0 opacity-45 h-[100vh] w-screen"></div>
         <div
           data-aos="fade-right"
-          className="absolute top-[200px] left-[100px] flex justify-between place-items-center w-[85%]"
+          className="absolute top-[200px] left-[100px] flex justify-between place-items-center w-[85%] carouselItems carouselItemsform"
         >
           <h1 className="text-[60px] text-white font-extrabold">
             THE CLEANING COMPANY <br /> YOU CAN TRUST
           </h1>
-          <Forms />
+          <Forms width="w-[40%]" inputWidth1="w-[100%]" inputWidth="w-[100%]" />
         </div>
       </div>
     </Carousel>

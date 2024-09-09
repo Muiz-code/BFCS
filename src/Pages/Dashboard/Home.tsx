@@ -20,117 +20,117 @@ const Home = () => {
   }, []);
   return (
     <div className="homeBg">
-      <CarouselSlide />
+      <div>
+        <CarouselSlide />
+      </div>
 
       {/* WELCOME TO BFCS */}
-      <div className="bg-white">
-        <div
-          data-aos="zoom-in"
-          className="flex flex-col p-[50px] justify-center place-items-center gap-[20px] font-family "
-        >
-          <h1 className="text-[30px] text-[#005883] font-bold">
-            WELCOME TO BFCS
-          </h1>
-          <p className="w-[50%] text-[16px] flex flex-col gap-[20px] text-justify text-[#4a4a4a]">
-            <span>
-              BFCS is a premier cleaning company offering exceptional service
-              and customer satisfaction. We provide top-quality commercial and
-              domestic cleaning solutions.
-            </span>
-            <span>
-              For homeowners, we offer flexible and efficient cleaning services
-              tailored to your specific needs. Choose from one-off cleans,
-              weekly, or fortnightly packages.
-            </span>
-            <span>
-              Our commercial cleaning services cater to a wide range of
-              businesses, including offices, schools, supermarkets, and cinemas.
-              We guarantee a high standard of service and professionalism for
-              every project.
-            </span>
-            <span>
-              Whether you're seeking domestic or commercial cleaning, selecting
-              BFCS means you'll receive expert services from one of the most
-              trusted cleaning companies in the industry.
-            </span>
-          </p>
-          <div className="flex gap-[15px]">
-            <div data-aos="fade-right">
-              <a
-                href="#"
-                className="flex place-items-center justify-between px-4 py-2 text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
-              >
-                <p>BOOK ONLINE</p>
-              </a>
-            </div>
-            <div data-aos="fade-left">
-              <a
-                href="#"
-                className="flex place-items-center justify-between px-4 py-2  text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
-              >
-                <p>CONTACT US</p>
-              </a>
-            </div>
+
+      <div
+        data-aos="zoom-in"
+        className="flex flex-col p-[50px] justify-center place-items-center gap-[20px] font-family"
+      >
+        <h1 className="text-[30px] text-[#005883] font-bold">
+          WELCOME TO BFCS
+        </h1>
+        <p className="w-[50%] text-[16px] flex flex-col gap-[20px] text-justify text-[#4a4a4a]">
+          <span>
+            BFCS is a premier cleaning company offering exceptional service and
+            customer satisfaction. We provide top-quality commercial and
+            domestic cleaning solutions.
+          </span>
+          <span>
+            For homeowners, we offer flexible and efficient cleaning services
+            tailored to your specific needs. Choose from one-off cleans, weekly,
+            or fortnightly packages.
+          </span>
+          <span>
+            Our commercial cleaning services cater to a wide range of
+            businesses, including offices, schools, supermarkets, and cinemas.
+            We guarantee a high standard of service and professionalism for
+            every project.
+          </span>
+          <span>
+            Whether you're seeking domestic or commercial cleaning, selecting
+            BFCS means you'll receive expert services from one of the most
+            trusted cleaning companies in the industry.
+          </span>
+        </p>
+        <div className="flex gap-[15px]">
+          <div data-aos="fade-right">
+            <a
+              href="#"
+              className="flex place-items-center justify-between px-4 py-2 text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+            >
+              <p>BOOK ONLINE</p>
+            </a>
+          </div>
+          <div data-aos="fade-left">
+            <a
+              href="#"
+              className="flex place-items-center justify-between px-4 py-2  text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+            >
+              <p>CONTACT US</p>
+            </a>
           </div>
         </div>
       </div>
 
       {/* ABOUT US */}
-      <div className="bg-white">
-        <div
-          data-aos="fade-down"
-          className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px]"
-        >
-          <h1 className="text-[30px] text-[#005883] font-bold">ABOUT US</h1>
-          <div className="flex flex-col gap-[40px]">
-            <div className="flex gap-[50px] justify-center">
-              <img
-                src={img1}
-                data-aos="fade-right"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-              <img
-                src={img2}
-                data-aos="zoom-out"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-              <img
-                src={img3}
-                data-aos="fade-left"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-            </div>
-            <div className="flex gap-[50px] justify-center">
-              <img
-                src={img5}
-                data-aos="fade-right"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-              <img
-                src={img6}
-                data-aos="zoom-out"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-              <img
-                src={img4}
-                data-aos="fade-left"
-                className="w-[20%] hover:scale-105 rounded-2xl"
-                alt=""
-              />
-            </div>
+
+      <div
+        data-aos="fade-down"
+        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]"
+      >
+        <h1 className="text-[30px] text-[#005883] font-bold">ABOUT US</h1>
+        <div className="flex flex-col gap-[40px]">
+          <div className="flex gap-[50px] justify-center">
+            <img
+              src={img1}
+              data-aos="fade-right"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
+            <img
+              src={img2}
+              data-aos="zoom-out"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
+            <img
+              src={img3}
+              data-aos="fade-left"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
           </div>
-          <a
-            href="#"
-            className="flex place-items-center justify-center px-4 py-4 w-[15%] text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
-          >
-            <p>ABOUT US</p>
-          </a>
+          <div className="flex gap-[50px] justify-center">
+            <img
+              src={img5}
+              data-aos="fade-right"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
+            <img
+              src={img6}
+              data-aos="zoom-out"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
+            <img
+              src={img4}
+              data-aos="fade-left"
+              className="w-[20%] hover:scale-105 rounded-2xl"
+              alt=""
+            />
+          </div>
         </div>
+        <a
+          href="#"
+          className="flex place-items-center justify-center px-4 py-4 w-[15%] text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+        >
+          <p>ABOUT US</p>
+        </a>
       </div>
 
       {/* WHY CHOOSE US */}
