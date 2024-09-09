@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line-height {
+  line-height: 80px;
+}
+.font-family {
+  font-family: "SUSE", system-ui;
+}
+.list {
+  list-style-type: square;
+}
+/* .homeBg {
+  background: url(./assets/FloorMopping.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: center;
+  background-attachment: fixed;
+} */
+.navbar {
+  @apply flex justify-between items-center p-4 bg-gray-100;
+}
+
+.menu {
+  @apply list-none m-0 p-0 flex;
+}
+
+.menu-item {
+  @apply mr-4;
+}
+
+.menu-button {
+  @apply text-gray-800 no-underline hover:underline;
+}
+
+.submenu {
+  @apply absolute bg-white shadow-md z-10 top-[60px];
+}
+
+
