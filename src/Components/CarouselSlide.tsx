@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Carousel } from "antd";
-import img1 from "../assets/CleaningFloor.jpg";
+import img1 from "../assets/Carousel.jpg";
 import img2 from "../assets/FloorMopping.jpg";
 import img3 from "../assets/GlassClean.jpg";
 import AOS from "aos";

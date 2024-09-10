@@ -59,7 +59,7 @@ const Home = () => {
         <div className="flex gap-[15px]">
           <div data-aos="fade-right">
             <a
-              href="#"
+              href="/contactUs"
               className="flex place-items-center justify-between px-4 py-2 text-[15px] btnMobileW bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
             >
               <p>BOOK ONLINE</p>
@@ -67,7 +67,7 @@ const Home = () => {
           </div>
           <div data-aos="fade-left">
             <a
-              href="#"
+              href="/contactUs"
               className="flex place-items-center justify-between px-4 py-2 btnMobileW text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
             >
               <p>CONTACT US</p>
@@ -126,7 +126,7 @@ const Home = () => {
           </div>
         </div>
         <a
-          href="#"
+          href="/aboutUs"
           className="flex place-items-center justify-center px-4 py-4 w-[15%] text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm btnMobileW"
         >
           <p>ABOUT US</p>

@@ -19,7 +19,7 @@
 }
 
 .menu {
-  @apply list-none m-0 p-0 flex;
+  @apply list-none flex;
 }
 
 .menu-item {
@@ -74,6 +74,9 @@
   }
   .w100 {
     width: 100%;
+  }
+  .h50vh {
+    height: 50vh;
   }
   .line-height {
     line-height: 30px;
@@ -155,5 +158,8 @@
     align-items: center;
     text-align: center;
     width: 100%;
+  }
+  .contact {
+    margin-top: 150px;
   }
 }

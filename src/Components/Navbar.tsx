@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
 
   const renderMenuItems = (items: MenuItem[]) => {
     return items.map((item) => (
-      <li key={item.key} className="h2">
+      <li key={item.key} className="h1">
         <a
           href={item.link}
           className="text-gray-800 no-underline hover:underline"
@@ -66,8 +66,12 @@ const Navbar: React.FC = () => {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <ul className="flex flex-col gap-10 gap menu h2">
+    <Box
+      sx={{ width: 250, padding: "10px" }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <ul className="flex flex-col  gap-[30px] mt-[100px] menu">
         {renderMenuItems(items)}
       </ul>
     </Box>
