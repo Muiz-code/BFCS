@@ -6,7 +6,7 @@ import MenuItem from "antd/es/menu/MenuItem";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import { MenuFoldOutlined } from "@ant-design/icons";
+import MenuIcon from "@mui/icons-material/Menu";
 
 interface MenuItem {
   label?: string;
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
   );
 
   return (
-    <nav className="flex p-5 justify-between place-items-center bg-white w-screen fixed z-[1000]">
+    <nav className="flex px-[5%] px2 py-5 justify-between place-items-center bg-white w-screen fixed z-[1000]">
       <div className="w-[15%]">
         <a href="/">
           <img src={logo} className="w-[50%] w100 logo" alt="BFCS LOGO III" />
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
       <div className="hide show">
         <Button onClick={toggleDrawer(true)}>
-          <MenuFoldOutlined style={{ color: "black", fontSize: "15px" }} />
+          <MenuIcon style={{ color: "black", fontSize: "23px" }} />
         </Button>
         <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}

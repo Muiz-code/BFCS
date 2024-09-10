@@ -14,18 +14,19 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col">
+    <div>
       <div>
-        <div className="bg-black absolute top-0 opacity-45 h-[100vh] w-[100%] carouselBg"></div>
-        <div
-          data-aos="fade-right"
-          className="absolute top-[200px] left-[100px] flex flex-col gap-[20px] carouselItems"
-        >
-          <img src={logo} className="w-[10%]" alt="" />
+        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%] carouselBg">
+          <div
+            data-aos="fade-right"
+            className=" flex flex-col gap-[20px] justify-center place-items-center mt-[150px] carouselItem"
+          >
+            <img src={logo} className="w-[10%]" alt="" />
 
-          <h1 className="text-[70px] text-white font-extrabold line-height">
-            CONTACT US
-          </h1>
+            <h1 className="text-[70px] text-white font-extrabold line-height1">
+              CONTACT US
+            </h1>
+          </div>
         </div>
         <div>
           <img src={img7} className="w-screen h-[100vh]" alt="" />

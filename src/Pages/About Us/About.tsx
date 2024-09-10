@@ -25,7 +25,7 @@ const About = () => {
       <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%] carouselBg">
         <div
           data-aos="fade-right"
-          className=" flex flex-col gap-[20px] justify-center place-items-center mt-[150px] carouselItem"
+          className=" flex flex-col gap-[20px] justify-center place-items-center mt-[150px] carouselItemAbout"
         >
           <img src={logo} className="w-[10%]" alt="" />
 

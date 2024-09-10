@@ -56,22 +56,22 @@ const Footer = () => {
           </h1>
           <ul className="flex flex-col gap-[30px] items gap">
             <li>
-              <a href="">
+              <a href="tel:020345677888">
                 <PhoneOutlined /> 020345677888
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="tel:020345677888">
                 <WhatsAppOutlined /> 020345677888
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="skype:username?call">
                 <SkypeOutlined /> 020345677888
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="mailto:info@BFCS.co.uk">
                 <MailOutlined /> info@BFCS.co.uk
               </a>
             </li>
@@ -85,21 +85,26 @@ const Footer = () => {
           <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             FOLLOW US
           </h1>
-          <div className="flex gap-[30px] gap">
-            <a href="">
+          <div className="flex flex-col gap-[30px] gap">
+            <a href="www.facebook.com" className="flex gap-3 hover:underline">
               <FacebookOutlined />
+              <p>Facebook</p>
             </a>
-            <a href="">
+            <a href="www.instagram.com" className="flex gap-3 hover:underline">
               <InstagramOutlined />
+              <p>Instagram</p>
             </a>
-            <a href="">
+            <a href="www.skype.com" className="flex gap-3 hover:underline">
               <SkypeOutlined />
+              <p>Skype</p>
             </a>
-            <a href="">
+            <a href="mailto:" className="flex gap-3 hover:underline">
               <MailOutlined />
+              <p>Mail</p>
             </a>
-            <a href="">
+            <a href="" className="flex gap-3 hover:underline">
               <YoutubeOutlined />
+              <p>Youtube</p>
             </a>
           </div>
         </div>

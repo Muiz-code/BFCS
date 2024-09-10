@@ -28,12 +28,12 @@ const CarouselSlide: React.FC = () => {
   }, []);
   return (
     <Carousel autoplay style={{ fontFamily: "SUSE" }}>
-      <div className="relative carouselContainer">
+      <div className="relative">
         <img src={img1} className="w-screen" style={contentStyle} />
         <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%] carouselBg">
           <div
             data-aos="fade-right"
-            className="flex flex-col gap-[20px] justify-center p-5 mt-[150px] carouselItems"
+            className="flex flex-col px-[5%] gap-[20px] justify-center p-5 mt-[150px] carouselItems"
           >
             <img src={logo} className="w-[10%]" alt="" />
             <h1 className="text-[70px] text-white font-extrabold line-height">
@@ -52,7 +52,7 @@ const CarouselSlide: React.FC = () => {
       <div className="relative">
         <img src={img2} className="w-screen" style={contentStyle} />
         <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-screen">
-          <div className="flex flex-col gap-[20px] justify-center p-5 mt-[150px] carouselItems">
+          <div className="flex px-[5%] flex-col gap-[20px] justify-center p-5 mt-[150px] carouselItems">
             <img src={logo} className="w-[10%]" alt="" />
             <div data-aos="fade-right" className="flex flex-col gap-[5px] ">
               <h1 className="text-[70px] text-white font-extrabold">
@@ -87,7 +87,7 @@ const CarouselSlide: React.FC = () => {
         <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-screen">
           <div
             data-aos="fade-right"
-            className="flex gap-[50px] mt-[150px] w-[100%] justify-center carouselItems carouselItemsform"
+            className="flex gap-[50px] px-[5%] mt-[150px] w-[100%] justify-center carouselItems carouselItemsform"
           >
             <div className="hide show justify-center">
               <img src={logo} className="w-[10%]" alt="" />
@@ -95,7 +95,7 @@ const CarouselSlide: React.FC = () => {
             <h1 className="text-[60px] text-white font-extrabold w-[50%] w100">
               THE CLEANING COMPANY <br /> YOU CAN TRUST
             </h1>
-            <div className="none w-[40%]">
+            <div className="none w-[50%]">
               <Forms
                 width="w-[100%]"
                 inputWidth1="w-[100%]"

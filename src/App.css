@@ -50,6 +50,9 @@
   .px {
     @apply px-[20px];
   }
+  .px2 {
+    @apply px-[2%];
+  }
   .py {
     @apply py-2;
   }
@@ -66,8 +69,8 @@
   .p0 {
     padding: 0px;
   }
-  .p5{
-    @apply p-5
+  .p5 {
+    @apply p-5;
   }
   .w100 {
     width: 100%;
@@ -80,7 +83,8 @@
   }
 
   .carouselItems img,
-  .carouselItem img {
+  .carouselItem img,
+  .carouselItemAbout img {
     width: 20%;
   }
   .carouselItems {
@@ -94,14 +98,16 @@
   }
 
   .carouselItems h1,
-  .carouselItem h1 {
+  .carouselItem h1,
+  .carouselItemAbout h1 {
     font-size: 25px;
     padding: 10px;
   }
   .carouselItems p {
     font-size: 16px;
   }
-  .carouselItem p {
+  .carouselItem p,
+  .carouselItemAbout p {
     width: 100%;
     font-size: 14px;
     padding: 10px;
@@ -133,6 +139,15 @@
     font-size: 12px;
   }
   .carouselItem {
+    margin-top: 90px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .carouselItemAbout {
     margin-top: 80px;
     padding: 0px;
     flex-direction: column;
