@@ -56,18 +56,18 @@ const Footer = () => {
           </h1>
           <ul className="flex flex-col gap-[30px] items gap">
             <li>
-              <a href="tel:020345677888">
-                <PhoneOutlined /> 020345677888
+              <a href="tel:07516 743557">
+                <PhoneOutlined /> 07516 743557
               </a>
             </li>
             <li>
-              <a href="tel:020345677888">
-                <WhatsAppOutlined /> 020345677888
+              <a href="tel:07516 743557">
+                <WhatsAppOutlined /> 07516 743557
               </a>
             </li>
             <li>
               <a href="skype:username?call">
-                <SkypeOutlined /> 020345677888
+                <SkypeOutlined /> 07516 743557
               </a>
             </li>
             <li>

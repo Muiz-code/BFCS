@@ -84,6 +84,9 @@
   .line-height1 {
     line-height: 0px;
   }
+  .line-height2 {
+    line-height: 10px;
+  }
 
   .carouselItems img,
   .carouselItem img,

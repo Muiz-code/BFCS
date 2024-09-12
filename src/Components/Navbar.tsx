@@ -6,7 +6,7 @@ import MenuItem from "antd/es/menu/MenuItem";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import MenuIcon from "@mui/icons-material/Menu";
+import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 
 interface MenuItem {
   label?: string;
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
 
       <div className="hide show">
         <Button onClick={toggleDrawer(true)}>
-          <MenuIcon style={{ color: "black", fontSize: "23px" }} />
+          <ViewQuiltIcon style={{ color: "black", fontSize: "23px" }} />
         </Button>
         <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}
