@@ -23,7 +23,11 @@
 }
 
 .menu-item {
-  @apply mr-4;
+  @apply mr-4 text-gray-800 no-underline hover:underline;
+}
+
+.menu-item.active {
+  text-decoration: underline;
 }
 
 .menu-button {
@@ -31,7 +35,7 @@
 }
 
 .submenu {
-  @apply absolute bg-white shadow-md z-10 top-[60px];
+  @apply absolute bg-white shadow-md top-[60px];
 }
 .hide {
   display: none;
@@ -39,7 +43,7 @@
 
 @media (max-width: 488px) {
   .submenu {
-    @apply absolute bg-white shadow-md z-10 top-[80px];
+    @apply absolute bg-white shadow-md top-[80px];
   }
   .h1 {
     font-size: 25px;
@@ -83,9 +87,6 @@
   }
   .line-height1 {
     line-height: 0px;
-  }
-  .line-height2 {
-    line-height: 10px;
   }
 
   .carouselItems img,

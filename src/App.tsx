@@ -15,7 +15,7 @@ import About from "./Pages/About Us/About";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route>
+      <Route path="/" element={<Navbar />}>
         <Route path="/" element={<Home />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/service" element={<Service />} />
@@ -26,7 +26,6 @@ function App() {
 
   return (
     <div>
-      <Navbar />
       <RouterProvider router={router} />
       <Footer />
     </div>

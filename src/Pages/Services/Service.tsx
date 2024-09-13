@@ -90,9 +90,7 @@ const Service = () => {
           >
             <img src={logo} className="w-[10%]" alt="" />
 
-            <h1 className="text-[70px] text-white font-extrabold line-height1">
-              SERVICES
-            </h1>
+            <h1 className="text-[70px] text-white font-extrabold">SERVICES</h1>
             <p className="text-white text-justify w-[70%]">
               At BFCS, we offer comprehensive cleaning solutions for both
               residential and commercial spaces. Our experienced team uses
@@ -125,11 +123,11 @@ const Service = () => {
             <Card
               hoverable
               style={{ width: 240 }}
-              className=" bg-white rounded-lg shadow-md"
+              className=" bg-white rounded-lg shadow-md w100"
               data-aos="fade-right"
               cover={<img alt={service.title} src={service.image} />}
             >
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 w100">
                 <Meta title={service.title} description={service.description} />
                 <a href="/contactUs" className="flex justify-between">
                   <Button type="primary" size="large" className="w-[100%]">
@@ -142,8 +140,8 @@ const Service = () => {
         </div>
       </div>
 
-      <div className="line-height1 flex flex-col pt-[20px]">
-        <div className="line-height1 flex flex-col pt-[20px]">
+      <div className=" flex flex-col pt-[20px]">
+        <div className=" flex flex-col pt-[20px]">
           <h1
             data-aos="fade-right"
             className="text-[30px] text-center text-[#005883] font-bold h1"
@@ -151,7 +149,10 @@ const Service = () => {
             SERVICES & PRICE
           </h1>
           <div className="flex flex-col justify-center place-items-center px-[100px] py-[40px] p20 gap-[30px]">
-            <h1 data-aos="fade-right" className="text-center w-[70%] w100">
+            <h1
+              data-aos="fade-right"
+              className="text-center w-[70%] w100 textJustify"
+            >
               <span className="text-[50px]">O</span>
               <span className="font-bold">
                 UR DOMESTIC CLEANING RATES At BFCS,
@@ -161,7 +162,10 @@ const Service = () => {
               competitive and straightforward. Our rates for domestic and
               commercial cleaning are among the most competitive in London.
             </h1>
-            <h1 data-aos="fade-right" className="text-center w-[70%] w100 ">
+            <h1
+              data-aos="fade-right"
+              className="text-center w-[70%] w100 textJustify"
+            >
               <span className="text-[50px]">E</span>
               <span className="font-bold">
                 NJOY OUR AFFORDABLE CLEANING RATES,

@@ -9,15 +9,16 @@ import img7 from "../../assets/Spray.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Cards from "../../Components/Cards";
 
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 500 });
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <div className="w-screen">
       <div>
@@ -179,6 +180,34 @@ const Home = () => {
           </ul>
         </div>
         <img data-aos="fade-left" src={img7} className="w-[40%] none" alt="" />
+      </div>
+
+      {/* Client review */}
+      <div
+        data-aos="fade-down"
+        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]"
+      >
+        <h1 className="text-[30px] text-[#005883] font-bold h1">
+          CLIENT REVIEW
+        </h1>
+        <div className="flex justify-between place-items-center px-[100px] py-[40px] p20 gap-[30px]">
+          <Cards
+            cardContainer={"w-[50%] bg-white p-[30px] flex flex-col gap-10"}
+            cardHeaderContainer={""}
+            avatar={""}
+            name={"Marilyn Bolger"}
+            content={
+              "Very happy with the services of BFCS. We used them 3 times during our busiest time of year, our annual Christmas Fair. It was a delight to have the building cleaned every evening and we will definitely use them again next year. Thank You!"
+            }
+            cardContentContainer={""}
+          />
+
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </div>
     </div>
   );
