@@ -32,6 +32,9 @@ interface FormsProps {
   heading?: string;
   formFields?: FormField[];
 }
+interface FormValues {
+  [key: string]: string | number;
+}
 
 const TellaFriend: React.FC<FormsProps> = ({
   width,
