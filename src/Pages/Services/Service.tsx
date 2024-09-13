@@ -5,7 +5,6 @@ import img8 from "../../assets/Contact.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import { Button, Card } from "antd";
 import CommercialCleaning from "../../assets/Commercial cleaning.jpg";
 import carpetCleaning from "../../assets/carpet cleaning.jpg";

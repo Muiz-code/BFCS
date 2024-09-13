@@ -34,7 +34,11 @@ const ContactUs = () => {
       </div>
       <div className="w-[100%] p-5 justify-between place-items-center flex">
         <div data-aos="fade-right " className="w-[46%] w100">
-          <ContactForms width="100%" inputWidth="w-[100%]" inputWidth1="py-4" />
+          <ContactForms
+            width="bg-[#ebebeb87]"
+            inputWidth="w-[100%]"
+            inputWidth1="py-4"
+          />
         </div>
         <div className="w-[46%] none" data-aos="fade-left">
           <img src={img1} className="" alt="" />

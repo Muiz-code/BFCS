@@ -30,23 +30,34 @@ const Footer = () => {
           <ul className="flex flex-col gap-[30px] items gap">
             <li className="hover:scale-105 flex gap-3 hover:underline">
               <RightCircleOutlined />
-              <a href="">HOME</a>
+              <a href="/">HOME</a>
+            </li>
+
+            <li className="hover:scale-105 flex gap-3 hover:underline">
+              <RightCircleOutlined />
+              <a href="/services">SERVICES</a>
+            </li>
+
+            <li className="hover:scale-105 flex gap-3 hover:underline">
+              <RightCircleOutlined />
+              <a href="/aboutus">ABOUT US</a>
+            </li>
+
+            <li className="hover:scale-105 flex gap-3 hover:underline">
+              <RightCircleOutlined />
+              <a href="/contactus">CONTACT</a>
             </li>
             <li className="hover:scale-105 flex gap-3 hover:underline">
               <RightCircleOutlined />
-              <a href="">SERVICES</a>
+              <a href="/contactus">BOOK ONLINE</a>
             </li>
             <li className="hover:scale-105 flex gap-3 hover:underline">
               <RightCircleOutlined />
-              <a href="">ABOUT US</a>
+              <a href="/contactus">JOIN OUR TEAM</a>
             </li>
             <li className="hover:scale-105 flex gap-3 hover:underline">
               <RightCircleOutlined />
-              <a href="">CONTACT</a>
-            </li>
-            <li className="hover:scale-105 flex gap-3 hover:underline">
-              <RightCircleOutlined />
-              <a href="">BOOK US</a>
+              <a href="/tellafriend">TELL A FRIEND</a>
             </li>
           </ul>
         </div>

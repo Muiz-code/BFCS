@@ -42,7 +42,7 @@ const items: MenuItem[] = [
       {
         label: "Client Reviews",
         key: "contactSupport",
-        link: "/contactSupport",
+        link: "/clientreview",
       },
     ],
   },
@@ -54,13 +54,13 @@ const items: MenuItem[] = [
       {
         label: "Contact Support",
         key: "contactSupport",
-        link: "/contactSupport",
+        link: "/contactus",
       },
 
       {
         label: "WhatsApp",
         key: "whatsapp",
-        link: "https://wa.me/+2348023456789", 
+        link: "https://wa.me/+2348023456789",
       },
 
       {
@@ -72,7 +72,7 @@ const items: MenuItem[] = [
       {
         label: "Tell a Friend",
         key: "tellAFriend",
-        link: "/tellAFriend",
+        link: "/tellafriend",
       },
 
       {
@@ -86,7 +86,7 @@ const items: MenuItem[] = [
   {
     label: "Book Online",
     key: "bookOnline",
-    link: "/bookOnline",
+    link: "/contactus",
     children: undefined,
   },
 ];
@@ -190,7 +190,6 @@ const Navbar: React.FC = () => {
           {renderMenuItems(items)}
         </ul>
 
-        {/* Responsive menu button */}
         <div className="lg:hidden">
           <Button onClick={showDrawer} className="border-0 bg-none">
             <ViewQuiltIcon style={{ color: "black", fontSize: "25px" }} />

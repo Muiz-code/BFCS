@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "SUSE", system-ui;
+}
 .line-height {
   line-height: 80px;
 }
@@ -51,6 +54,14 @@
   .h2 {
     font-size: 13px;
   }
+  .items li,
+  .h3 {
+    font-size: 12px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+
   .px {
     @apply px-[20px];
   }
@@ -82,7 +93,7 @@
   .h50vh {
     height: 50vh;
   }
-  .h5vh{
+  .h5vh {
     height: 5vh;
   }
   .line-height {
@@ -146,10 +157,7 @@
     justify-content: center;
     align-items: center;
   }
-  .items li,
-  .h3 {
-    font-size: 12px;
-  }
+
   .carouselItem {
     margin-top: 90px;
     padding: 0px;

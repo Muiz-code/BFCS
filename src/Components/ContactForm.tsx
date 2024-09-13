@@ -30,7 +30,6 @@ const ContactForms: React.FC<FormsProps> = ({
   <Form
     name="nest-messages"
     onFinish={onFinish}
-    style={{ background: "#ebeef1" }}
     className={`p-5 flex flex-col justify-center place-items-center rounded-2xl gap-[10px] ${width}`}
     validateMessages={validateMessages}
   >

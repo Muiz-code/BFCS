@@ -11,6 +11,8 @@ import Navbar from "./Components/Navbar";
 import ContactUs from "./Pages/Reach Out/ContactUs";
 import Service from "./Pages/Services/Service";
 import About from "./Pages/About Us/About";
+import ClientReview from "./Pages/About Us/ClientReview";
+import TellAFriend from "./Pages/Reach Out/TellAFriend";
 
 function App() {
   const router = createBrowserRouter(
@@ -20,6 +22,8 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/service" element={<Service />} />
         <Route path="/aboutUs" element={<About />} />
+        <Route path="/clientreview" element={<ClientReview />} />
+        <Route path="/tellafriend" element={<TellAFriend />} />
       </Route>
     )
   );
