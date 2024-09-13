@@ -281,7 +281,7 @@ const Home = () => {
         >
           <Button
             size="large"
-            className="w-[30%] bg-[#005883] text-white h-[7vh] rounded-none"
+            className="w-[30%] w100 h5vh bg-[#005883] text-white h-[7vh] rounded-none"
           >
             SEE MORE REVIEWS
           </Button>

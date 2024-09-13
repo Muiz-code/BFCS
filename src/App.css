@@ -82,6 +82,9 @@
   .h50vh {
     height: 50vh;
   }
+  .h5vh{
+    height: 5vh;
+  }
   .line-height {
     line-height: 30px;
   }
