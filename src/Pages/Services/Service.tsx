@@ -115,7 +115,7 @@ const Service = () => {
       </div>
       <div
         data-aos="fade-down"
-        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]"
+        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%] p20"
       >
         <h1 className="text-[30px] text-[#005883] font-bold h1">SERVICES</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">

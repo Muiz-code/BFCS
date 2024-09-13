@@ -130,7 +130,9 @@
   .p20 {
     @apply p-[20px];
   }
-
+  .p10 {
+    @apply p-[2px];
+  }
   .aboutiMG {
     flex-direction: column;
   }
@@ -165,5 +167,8 @@
   }
   .contact {
     margin-top: 150px;
+  }
+  .client {
+    flex-direction: column;
   }
 }

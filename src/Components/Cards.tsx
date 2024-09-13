@@ -1,8 +1,9 @@
 import React from "react";
+import { UserOutlined } from "@ant-design/icons";
+import { Avatar } from "antd";
 interface cardDetails {
   cardContainer: string;
   cardHeaderContainer: string;
-  avatar: string;
   name: string;
   content: string;
   cardContentContainer: string;
@@ -11,18 +12,17 @@ interface cardDetails {
 const Cards: React.FC<cardDetails> = ({
   cardContainer,
   cardHeaderContainer,
-  avatar,
   name,
   content,
   cardContentContainer,
 }) => (
   <div className={` ${cardContainer}`}>
     <div className={`border-b-2 ${cardHeaderContainer}`}>
-      <img src={avatar} alt="" />
+      <Avatar size={64} icon={<UserOutlined />} />
       <h2>{name}</h2>
     </div>
     <div className={` ${cardContentContainer}`}>
-      <p>{content}</p>
+      <p className="text-justify">{content}</p>
     </div>
   </div>
 );

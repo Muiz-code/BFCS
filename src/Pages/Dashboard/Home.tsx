@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Cards from "../../Components/Cards";
+import { Button } from "antd";
 
 const Home = () => {
   useEffect(() => {
@@ -185,29 +186,106 @@ const Home = () => {
       {/* Client review */}
       <div
         data-aos="fade-down"
-        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]"
+        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] p20 w-[100%]"
       >
         <h1 className="text-[30px] text-[#005883] font-bold h1">
           CLIENT REVIEW
         </h1>
-        <div className="flex justify-between place-items-center px-[100px] py-[40px] p20 gap-[30px]">
-          <Cards
-            cardContainer={"w-[50%] bg-white p-[30px] flex flex-col gap-10"}
-            cardHeaderContainer={""}
-            avatar={""}
-            name={"Marilyn Bolger"}
-            content={
-              "Very happy with the services of BFCS. We used them 3 times during our busiest time of year, our annual Christmas Fair. It was a delight to have the building cleaned every evening and we will definitely use them again next year. Thank You!"
-            }
-            cardContentContainer={""}
-          />
+        <div className="flex justify-between place-items-center px-[100px] py-[40px] p10 gap-[30px] w-[100%] client">
+          <div className="w-[50%] flex flex-col gap-5 w100">
+            <Cards
+              cardContainer={
+                " bg-white px-[30px] py-[10px] flex flex-col gap-3 rounded-2xl "
+              }
+              cardHeaderContainer={
+                "flex justify-between place-items-center p-3"
+              }
+              name={"Marilyn Bolger"}
+              content={
+                "Good. I wold expect staff to show ID at the door and be wearing some form of uniformExcellent. I was so pleased I came into your office the same day to tell you I was very very pleased with how the two cleaners had cleaned my Mother in law’s flat. The two cleaners were excellent. When I came into the your office to say how very very pleased I was with the results, I decided to arrange for a cleaner to come once a fortnight. I asked for a mature lady with clear English and was delighted that I got what I asked for and it will be the same lady each time. (Which is more than she gets from her care agency) You guys wer on time, very courteous and friendly. The work was carried out quickly, efficiently and to a high standard.An excellent spring clean. The cleaners arrived at 8am as arranged. We were very pleased with the way Mariya and her companion spring cleaned our home. They were very thorough and worked hard for the five hours they were with us and we wish to pass on our thanks to them."
+              }
+              cardContentContainer={"py-[5px]"}
+            />
+            <div>
+              {" "}
+              <Cards
+                cardContainer={
+                  " bg-white px-[30px] py-[10px] flex flex-col gap-3 rounded-2xl"
+                }
+                cardHeaderContainer={
+                  "flex justify-between place-items-center p-3"
+                }
+                name={"Oriva Kim"}
+                content={
+                  "Absolutely fantastic service by friendly hard-working cleaner, left my double oven scrupulously clean and looking like brand new."
+                }
+                cardContentContainer={"py-[5px]"}
+              />
+            </div>
+          </div>
 
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="flex flex-col gap-5 w-[50%] w100">
+            <div>
+              {" "}
+              <Cards
+                cardContainer={
+                  " bg-white px-[30px] py-[10px] flex flex-col gap-3 rounded-2xl"
+                }
+                cardHeaderContainer={
+                  "flex justify-between place-items-center p-3"
+                }
+                name={"Jackie Bywaters"}
+                content={
+                  "Very Very Good service. The cleaner was a very nice lady and did a really great job."
+                }
+                cardContentContainer={"py-[5px]"}
+              />
+            </div>
+            <div>
+              {" "}
+              <Cards
+                cardContainer={
+                  " bg-white px-[30px] py-[10px] flex flex-col gap-3 rounded-2xl"
+                }
+                cardHeaderContainer={
+                  "flex justify-between place-items-center p-3"
+                }
+                name={"Nina Gupta"}
+                content={
+                  "Arrived punctually, very efficient, hard working and did an excellent clean. Highly recommend."
+                }
+                cardContentContainer={"py-[5px]"}
+              />
+            </div>
+            <div>
+              {" "}
+              <Cards
+                cardContainer={
+                  " bg-white px-[30px] py-[10px] flex flex-col gap-3 rounded-2xl"
+                }
+                cardHeaderContainer={
+                  "flex justify-between place-items-center p-3"
+                }
+                name={"Amanda Gray"}
+                content={
+                  "I was very happy with the service you provided. I will definitely use you again. The cleaner did a great job. I would give 10 out of 10 for the standard of cleaning.The carpets have settled down well and have regained the flatness back which is great news. They do also look much cleaner and sharper so I am very pleased with the job. I will now discuss with our Property Manager as to other areas and buildings we may wish to address and I will be in touch to discuss. Many thanks for the great service provided thus far.Sorry Peter, I should have said – the clubhouse looked great, many thanks to the team!"
+                }
+                cardContentContainer={"py-[5px]"}
+              />
+            </div>
           </div>
         </div>
+        <a
+          href="/clientreview"
+          className="flex w-[100%] place-items-center justify-center"
+        >
+          <Button
+            size="large"
+            className="w-[30%] bg-[#005883] text-white h-[7vh] rounded-none"
+          >
+            SEE MORE REVIEWS
+          </Button>
+        </a>
       </div>
     </div>
   );
