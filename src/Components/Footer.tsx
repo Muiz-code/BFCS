@@ -22,8 +22,8 @@ const Footer = () => {
   }, []);
   return (
     <div className="flex flex-col w-[100%]">
-      <div className="flex justify-between p-[50px] p0 w100">
-        <div className="flex flex-col gap-5">
+      <div className="flex justify-between p-[50px] w-[100%] p0 w100">
+        <div className="flex flex-col gap-5 w-[24%]">
           <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             NAVIGATION
           </h1>
@@ -61,7 +61,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-[24%]">
           <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             CONTACT US
           </h1>
@@ -92,7 +92,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-[24%]">
           <h1 className="bg-[#005883] text-white px-[100px] py-3 px py h2">
             FOLLOW US
           </h1>
@@ -119,8 +119,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-5 none">
-          <h1 className="bg-[#005883] text-white px-[100px] py-3 h1">
+        <div className="flex flex-col gap-5 none w-[24%]">
+          <h1 className="bg-[#005883] flex place-items-center justify-center text-white px-[100px]  py-3 h1">
             REACH OUT
           </h1>
           <Form />
