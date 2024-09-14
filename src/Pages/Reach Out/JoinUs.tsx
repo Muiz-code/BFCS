@@ -1,8 +1,8 @@
 import logo from "../../assets/BFCS LOGO/BFCS LOGO.png";
-import img7 from "../../assets/TellAFriend.jpg";
+import img7 from "../../assets/JoinUs.jpg";
 import TellaFriend from "../../Components/TellAFriend";
 
-const TellAFriend = () => {
+const JoinOurTeamForm = () => {
   return (
     <div>
       <div>
@@ -14,7 +14,7 @@ const TellAFriend = () => {
             <img src={logo} className="w-[10%]" alt="" />
 
             <h1 className="text-[70px] text-white font-extrabold">
-              TELL A FRIEND
+              JOIN OUR TEAM
             </h1>
           </div>
         </div>
@@ -24,47 +24,17 @@ const TellAFriend = () => {
       </div>
       <div className="bg-[#ebebeb87] py-[30px]">
         <h1 className="text-[30px] text-center text-[#005883] font-bold h4">
-          REFER A FRIEND
+          JOIN US
         </h1>
-        <h2 className="text-[25px] text-center text-[#005883] font-bold h2">
-          IT PAYS TO GOSSIP
-        </h2>
-        <div className="px-[5%]">
-          <p className="text-justify">
-            If you’re an existing customer of ours and love what we do, why not
-            recommend us to your friends and family. You can refer us to as many
-            people as you want. If your referral signs up to our regular
-            cleaning service*, we will return the favour with a bonus
-          </p>
-          <div>
-            <p>How it works:</p>
-            <ul className="list">
-              <li className="list">
-                All they have to do is mention your name and address. it’s that
-                easy.
-              </li>
-              <li>
-                You will receive a bonus which you can collect from our office
-                or via bank transfer or we can simply deduct it from your next
-                bill.
-              </li>
-            </ul>
-            <p>
-              You can collect your bonus from our HQ or we can make a bank
-              transfer or deduct the money from your next bill. It’s completely
-              up to you.
-            </p>
-          </div>
-        </div>
       </div>
       <div className="px-[5%] bg-[#ebebeb87]">
         <TellaFriend
           width="w-[100%] w100 "
           inputWidth="w-full"
           inputWidth1="py-4"
-          radioStyle="flex gap-3"
-          terms="I agree that the Company can use my details to contact me in regards to my enquiry and for future promotions."
-          heading="*Terms: Please note that your referral has to sign up for our regular cleaning service for a minimum of 6 months."
+          radioStyle="flex flex-col gap-3"
+          terms="I agree that BFCS can use my details to contact me in regards to my job application and my future work relationship with the company."
+          heading="*Terms: Please note that your informations must be accurate"
           formFields={[
             {
               label: "Full Name",
@@ -93,37 +63,45 @@ const TellAFriend = () => {
             {
               label: "Message",
               name: "message",
+              placeholder:
+                "Tell us a little about you and your work experience?",
               rules: [{ required: true }],
               type: "textarea",
               rows: 4,
             },
             {
-              label: "Name",
-              name: "fullName",
-              placeholder: "Their Name",
+              label: "Message",
+              name: "message",
+              placeholder: "Why do you want to work with us?",
+              rules: [{ required: true }],
+              type: "textarea",
+              rows: 4,
+            },
+            {
+              label: "Message",
+              name: "message",
+              placeholder: "What do you think about your previous employer?",
+              rules: [{ required: true }],
+              type: "textarea",
+              rows: 4,
+            },
+            {
+              label: "Do you know what cleaning is?",
+              name: "question1",
+              type: "radio",
+              options: ["Yes", "No"],
               rules: [{ required: true }],
             },
             {
-              label: "Email",
-              name: "email",
-              rules: [{ required: true }],
-              placeholder: "Their Email",
-            },
-            {
-              label: "Phone Number",
-              name: "phoneNumber",
-              placeholder: "Their Phone Number",
+              label: "Do you accept that the customer always has a priority?",
+              name: "question2",
+              type: "radio",
+              options: ["Yes", "No"],
               rules: [{ required: true }],
             },
             {
-              label: "Address",
-              name: "address",
-              placeholder: "Their Address",
-              rules: [{ required: true }],
-            },
-            {
-              label: "Would you like us to phone the new client?",
-              name: "agree",
+              label: "Do you want to work as a cleaner?",
+              name: "question3",
               type: "radio",
               options: ["Yes", "No"],
               rules: [{ required: true }],
@@ -135,4 +113,4 @@ const TellAFriend = () => {
   );
 };
 
-export default TellAFriend;
+export default JoinOurTeamForm;

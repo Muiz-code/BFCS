@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Form, Input } from "antd";
+import { Button, Checkbox, Form, Input, Radio } from "antd";
 
 const validateMessages = {
   required: "${label} is required!",
@@ -23,6 +23,8 @@ interface FormField {
   placeholder?: string;
   type?: string;
   rows?: number;
+  options?: string[];
+  showIf?: (formValues: any) => boolean;
 }
 
 interface FormsProps {
@@ -30,6 +32,8 @@ interface FormsProps {
   inputWidth?: string;
   inputWidth1?: string;
   heading?: string;
+  radioStyle?: string;
+  terms?: string;
   formFields?: FormField[];
 }
 interface FormValues {
@@ -41,6 +45,8 @@ const TellaFriend: React.FC<FormsProps> = ({
   inputWidth,
   inputWidth1,
   heading,
+  radioStyle,
+  terms,
   formFields = [],
 }) => {
   const [formValues, setFormValues] = useState<FormValues>({});
@@ -50,7 +56,11 @@ const TellaFriend: React.FC<FormsProps> = ({
   };
 
   const handleSubmit = () => {
-    onFinish(formValues);
+    if (formValues.agreeToTerms) {
+      onFinish(formValues);
+    } else {
+      alert("Please agree to the terms and conditions before submitting.");
+    }
   };
 
   return (
@@ -67,7 +77,21 @@ const TellaFriend: React.FC<FormsProps> = ({
           rules={field.rules}
           className={`${inputWidth}`}
         >
-          {field.type === "textarea" ? (
+          {field.type === "radio" ? (
+            <div className={radioStyle}>
+              <label>{field.label}</label>
+              <Radio.Group
+                value={formValues[field.name]}
+                onChange={(e) => handleInputChange(field.name, e.target.value)}
+              >
+                {field.options?.map((option) => (
+                  <Radio key={option} value={option}>
+                    {option}
+                  </Radio>
+                ))}
+              </Radio.Group>
+            </div>
+          ) : field.type === "textarea" ? (
             <Input.TextArea
               rows={field.rows || 4}
               placeholder={field.placeholder}
@@ -85,7 +109,13 @@ const TellaFriend: React.FC<FormsProps> = ({
           )}
         </Form.Item>
       ))}
-
+      <Form.Item className={`${inputWidth}`}>
+        <Checkbox
+          onChange={(e) => handleInputChange("agreeToTerms", e.target.checked)}
+        >
+          {terms}
+        </Checkbox>
+      </Form.Item>
       <Form.Item className={`${inputWidth}`}>
         <Button
           type="primary"

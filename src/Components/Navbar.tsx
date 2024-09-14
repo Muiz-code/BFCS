@@ -78,7 +78,7 @@ const items: MenuItem[] = [
       {
         label: "Join Our Team",
         key: "joinOurTeam",
-        link: "/joinOurTeam",
+        link: "/joinourteam",
       },
     ],
   },
@@ -87,6 +87,12 @@ const items: MenuItem[] = [
     label: "Book Online",
     key: "bookOnline",
     link: "/contactus",
+    children: undefined,
+  },
+  {
+    label: "Blog",
+    key: "bookOnline",
+    link: "/blog",
     children: undefined,
   },
 ];
