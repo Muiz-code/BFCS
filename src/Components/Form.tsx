@@ -30,7 +30,9 @@ const Forms: React.FC<FormsProps> = ({ width, inputWidth, inputWidth1 }) => (
     className={`p-5 flex flex-col justify-center place-items-center rounded-2xl gap-[10px] ${width}`}
     validateMessages={validateMessages}
   >
-    <h1 className="text-[30px] font-bold text-[#3a3b3b]">Request For A Qoute</h1>
+    <h1 className="text-[25px] text-center font-bold text-[#3a3b3b]">
+      REQUEST FOR A FREE QOUTE
+    </h1>
     <Form.Item
       name={"Full Name"}
       rules={[{ required: true }]}

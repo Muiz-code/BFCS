@@ -123,7 +123,7 @@ const Footer = () => {
           <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h1">REACH OUT</h1>
           </div>
-          <Form />
+          <Form width="w-[100%]" inputWidth1="w-[100%]" inputWidth="w-[100%]" />
         </div>
       </div>
       <div className="flex justify-center bg-[#005883] p-4 text-white h2">
