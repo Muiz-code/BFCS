@@ -24,7 +24,7 @@ const Footer = () => {
     <div className="flex flex-col w-[100%]">
       <div className="flex justify-between p-[50px] w-[100%] p0 w100">
         <div className="flex flex-col gap-5 w-[24%]">
-          <div className="bg-[#005883] text-white px-[100px] py-3 px py flex place-items-center justify-center">
+          <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h2">NAVIGATION</h1>
           </div>
           <ul className="flex flex-col gap-[30px] items gap">
@@ -62,7 +62,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5 w-[24%]">
-          <div className="bg-[#005883] text-white px-[100px] py-3 px py flex place-items-center justify-center">
+          <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h2">CONTACT US</h1>
           </div>
           <ul className="flex flex-col gap-[30px] items gap">
@@ -93,7 +93,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5 w-[24%]">
-          <div className="bg-[#005883] text-white px-[100px] py-3 px py flex place-items-center justify-center">
+          <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className=" h2">FOLLOW US</h1>
           </div>
           <div className="flex flex-col gap-[30px] gap">
@@ -120,7 +120,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-5 none w-[24%]">
-          <div className="bg-[#005883] text-white px-[100px] py-3 px py flex place-items-center justify-center">
+          <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h1">REACH OUT</h1>
           </div>
           <Form />
