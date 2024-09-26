@@ -29,7 +29,7 @@ const CarouselSlide: React.FC = () => {
   return (
     <Carousel autoplay style={{ fontFamily: "SUSE" }}>
       <div className="relative">
-        <img src={img1} className="w-screen" style={contentStyle} />
+        <img src={img1} className="w-full" style={contentStyle} />
         <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%] carouselBg">
           <div
             data-aos="fade-right"
@@ -50,8 +50,8 @@ const CarouselSlide: React.FC = () => {
         </div>
       </div>
       <div className="relative">
-        <img src={img2} className="w-screen" style={contentStyle} />
-        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-screen">
+        <img src={img2} className="w-full" style={contentStyle} />
+        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-full">
           <div className="flex px-[5%] flex-col gap-[20px] justify-center p-5 mt-[150px] carouselItems">
             <img src={logo} className="w-[10%]" alt="" />
             <div data-aos="fade-right" className="flex flex-col gap-[5px] ">
@@ -83,8 +83,8 @@ const CarouselSlide: React.FC = () => {
         </div>
       </div>
       <div className="relative">
-        <img src={img3} className="w-screen" style={contentStyle} />
-        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-screen">
+        <img src={img3} className="w-full" style={contentStyle} />
+        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-full">
           <div
             data-aos="fade-right"
             className="flex gap-[50px] px-[5%] mt-[150px] w-[100%] justify-center carouselItems carouselItemsform"

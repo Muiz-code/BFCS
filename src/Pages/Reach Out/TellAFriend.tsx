@@ -82,7 +82,10 @@ const TellAFriend = () => {
               label: "Phone Number",
               name: "phoneNumber",
               placeholder: "Phone Number",
-              rules: [{ required: true }],
+              rules: [
+                { required: true, message: "Please input your phone number!" },
+                { pattern: /^\d{12}$/, message: "Invalid Phone number" },
+              ],
             },
             {
               label: "Address",

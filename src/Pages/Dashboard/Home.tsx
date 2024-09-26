@@ -21,7 +21,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="w-screen">
+    <div className="w-[100%] flex flex-col">
       <div>
         <CarouselSlide />
       </div>

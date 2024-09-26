@@ -21,9 +21,9 @@ const Footer = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col w-[100%]">
-      <div className="flex justify-between p-[50px] w-[100%] p0 w100">
-        <div className="flex flex-col gap-5 w-[24%]">
+    <div className="flex flex-col w-full">
+      <div className="flex justify-between p-[50px] w-[100%] p0">
+        <div className="flex flex-col gap-5 w-[24%] w100">
           <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h2">NAVIGATION</h1>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-5 w-[24%]">
+        <div className="flex flex-col gap-5 w-[24%] w100">
           <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className="h2">CONTACT US</h1>
           </div>
@@ -92,7 +92,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-5 w-[24%]">
+        <div className="flex flex-col gap-5 w-[24%] w100">
           <div className="bg-[#005883] text-white w-[100%] py-3 px py flex place-items-center justify-center">
             <h1 className=" h2">FOLLOW US</h1>
           </div>

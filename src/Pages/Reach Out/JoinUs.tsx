@@ -62,7 +62,7 @@ const JoinOurTeamForm = () => {
             },
             {
               label: "Message",
-              name: "message",
+              name: "Work experience",
               placeholder:
                 "Tell us a little about you and your work experience?",
               rules: [{ required: true }],
@@ -71,7 +71,7 @@ const JoinOurTeamForm = () => {
             },
             {
               label: "Message",
-              name: "message",
+              name: "Why to work with us",
               placeholder: "Why do you want to work with us?",
               rules: [{ required: true }],
               type: "textarea",
@@ -79,7 +79,7 @@ const JoinOurTeamForm = () => {
             },
             {
               label: "Message",
-              name: "message",
+              name: "Previous employer info",
               placeholder: "What do you think about your previous employer?",
               rules: [{ required: true }],
               type: "textarea",

@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleMenuToggle = (key: string) => {
-    setOpenMenuKey(key === openMenuKey ? "" : key); // Toggle open state for the clicked item
+    setOpenMenuKey(key === openMenuKey ? "" : key);
   };
 
   const handleDocumentClick = (event: MouseEvent) => {
@@ -182,9 +182,9 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <nav
-        className="flex px-[5%] px2 py-5 justify-between place-items-center bg-white w-screen fixed z-[1000] "
+        className="flex px-[5%] px2 py-5 justify-between place-items-center  w-[100%] fixed z-[1000] bg-red-500"
         id="navbar-menu"
       >
         <div className="w-[15%]">
@@ -207,7 +207,7 @@ const Navbar: React.FC = () => {
           </Drawer>
         </div>
       </nav>
-      <div>
+      <div className="w-[100%]">
         <Outlet />
       </div>
     </div>

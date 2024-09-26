@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Checkbox, Form, Input, Radio } from "antd";
+import axios from "axios";
 
 const validateMessages = {
   required: "${label} is required!",
@@ -10,10 +11,6 @@ const validateMessages = {
   number: {
     range: "${label} must be between ${min} and ${max}",
   },
-};
-
-const onFinish = (values: any) => {
-  console.log(values);
 };
 
 interface FormField {
@@ -60,6 +57,24 @@ const TellaFriend: React.FC<FormsProps> = ({
       onFinish(formValues);
     } else {
       alert("Please agree to the terms and conditions before submitting.");
+    }
+  };
+
+  const [thankYouMessage, setThanks] = useState("");
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  const onFinish = async (values: any) => {
+    try {
+      const response = await axios.post(
+        "https://formspree.io/f/mqazvdrz",
+        values
+      );
+      console.log(response.data);
+
+      setThanks("Thank you for your submission! We will get back to you soon");
+      setIsDisabled(true);
+    } catch (error) {
+      console.error(error);
     }
   };
 
@@ -121,9 +136,13 @@ const TellaFriend: React.FC<FormsProps> = ({
           type="primary"
           className="flex place-items-center justify-between px-4 py-2 text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white hover:bg-none rounded-sm"
           onClick={handleSubmit}
+          disabled={isDisabled}
         >
           Submit
         </Button>
+        {thankYouMessage && (
+          <p className="text-[#005883] mt-3 font-semibold">{thankYouMessage}</p>
+        )}
       </Form.Item>
     </Form>
   );
