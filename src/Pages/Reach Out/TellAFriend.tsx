@@ -68,19 +68,19 @@ const TellAFriend = () => {
           formFields={[
             {
               label: "Full Name",
-              name: "fullName",
+              name: "Client full Name",
               placeholder: "Full Name",
               rules: [{ required: true }],
             },
             {
               label: "Email",
-              name: "email",
+              name: "Client Email",
               rules: [{ required: true }],
               placeholder: "Email",
             },
             {
               label: "Phone Number",
-              name: "phoneNumber",
+              name: "Client Phone Number",
               placeholder: "Phone Number",
               rules: [
                 { required: true, message: "Please input your phone number!" },
@@ -89,38 +89,39 @@ const TellAFriend = () => {
             },
             {
               label: "Address",
-              name: "address",
+              name: "Client Address",
               placeholder: "Address",
               rules: [{ required: true }],
             },
             {
               label: "Message",
-              name: "message",
+              name: "Something about client referral",
+              placeholder: "Write something about them we can use to relate?",
               rules: [{ required: true }],
               type: "textarea",
               rows: 4,
             },
             {
               label: "Name",
-              name: "fullName",
+              name: "Client refferal Name",
               placeholder: "Their Name",
               rules: [{ required: true }],
             },
             {
               label: "Email",
-              name: "email",
+              name: "Client refferal Email",
               rules: [{ required: true }],
               placeholder: "Their Email",
             },
             {
               label: "Phone Number",
-              name: "phoneNumber",
+              name: "Client refferal phone Number",
               placeholder: "Their Phone Number",
               rules: [{ required: true }],
             },
             {
               label: "Address",
-              name: "address",
+              name: "Client refferal address",
               placeholder: "Their Address",
               rules: [{ required: true }],
             },

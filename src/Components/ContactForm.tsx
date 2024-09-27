@@ -30,7 +30,7 @@ const ContactForms: React.FC<FormsProps> = ({
   const onFinish = async (values: any) => {
     try {
       const response = await axios.post(
-        "https://formspree.io/f/mqazvdrz",
+        "https://formspree.io/f/xjkbnyoe",
         values
       );
       console.log(response.data);
@@ -79,7 +79,7 @@ const ContactForms: React.FC<FormsProps> = ({
         <Input placeholder="Address" className={`${inputWidth1} py-2`} />
       </Form.Item>
       <Form.Item
-        name="bio"
+        name="What i want"
         rules={[{ required: true }]}
         className={`${inputWidth}`}
       >

@@ -26,7 +26,7 @@ const Forms: React.FC<FormsProps> = ({ width, inputWidth, inputWidth1 }) => {
   const onFinish = async (values: any) => {
     try {
       const response = await axios.post(
-        "https://formspree.io/f/mqazvdrz",
+        "https://formspree.io/f/xjkbnyoe",
         values
       );
       console.log(response.data);

@@ -184,7 +184,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full">
       <nav
-        className="flex px-[5%] px2 py-5 justify-between place-items-center  w-[100%] fixed z-[1000] bg-red-500"
+        className="flex px-[5%] px2 py-5 justify-between place-items-center  w-[100%] fixed z-[1000] bg-white"
         id="navbar-menu"
       >
         <div className="w-[15%]">
