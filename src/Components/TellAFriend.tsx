@@ -93,14 +93,14 @@ const TellaFriend: React.FC<FormsProps> = ({
           className={`${inputWidth}`}
         >
           {field.type === "radio" ? (
-            <div className={radioStyle}>
+            <div className={`${radioStyle} h3`}>
               <label>{field.label}</label>
               <Radio.Group
                 value={formValues[field.name]}
                 onChange={(e) => handleInputChange(field.name, e.target.value)}
               >
                 {field.options?.map((option) => (
-                  <Radio key={option} value={option}>
+                  <Radio key={option} value={option} className="h3">
                     {option}
                   </Radio>
                 ))}
@@ -126,6 +126,7 @@ const TellaFriend: React.FC<FormsProps> = ({
       ))}
       <Form.Item className={`${inputWidth}`}>
         <Checkbox
+          className="text-justify h3"
           onChange={(e) => handleInputChange("agreeToTerms", e.target.checked)}
         >
           {terms}
