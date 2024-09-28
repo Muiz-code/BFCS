@@ -50,7 +50,7 @@ const About = () => {
             organized space.
           </p>
           <a
-            href="#"
+            href="/contactus"
             className="flex place-items-center btnMobile justify-between px-4 py-2 w-[15%] text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
           >
             <p>CONTACT US</p>
@@ -113,7 +113,7 @@ const About = () => {
           <h1 data-aos="fade-right" className="text-[25px] h1">
             WHY CHOOSE BFCS?
           </h1>
-          <ul className="list flex flex-col gap-[15px] text-justify ">
+          <ul className="list flex flex-col gap-[15px] p5 text-justify ">
             <li data-aos="fade-right">
               Proven Expertise: Benefit from our years of experience in
               providing exceptional cleaning services.
@@ -151,6 +151,13 @@ const About = () => {
               recommendations.
             </li>
           </ul>
+          <a
+            href="/contactus"
+            className="flex place-items-center btnMobile justify-between px-4 py-2 w-[15%] text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+          >
+            <p>CONTACT US</p>
+            <ArrowRightOutlined style={{ fontSize: "15px" }} />
+          </a>
         </div>
         <img data-aos="fade-left" src={img8} className="w-[40%] none" alt="" />
       </div>
