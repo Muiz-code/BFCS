@@ -1,7 +1,7 @@
 const Blog = () => {
   return (
     <div className="flex justify-center place-items-center h-[100vh]">
-      <h1 className="flex text-[80px] font-bold">
+      <h1 className="flex text-[80px] h4 font-bold">
         BLOG IS UNDER
         <br /> MAINTAINANCE
       </h1>
