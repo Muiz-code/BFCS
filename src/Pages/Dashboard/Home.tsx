@@ -21,87 +21,80 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="w-[100%] flex flex-col">
+    <div className=" flex flex-col">
       <div>
         <CarouselSlide />
       </div>
 
       {/* WELCOME TO BFCS */}
 
-      <div
-        data-aos="zoom-in"
-        className="flex flex-col p-[50px] justify-center place-items-center gap-[20px] font-family  p20"
-      >
-        <h1 className="text-[30px] text-[#005883] font-bold h1">
-          WELCOME TO BFCS
-        </h1>
-        <p className="w-[50%] text-[16px] flex flex-col gap-[20px] text-justify text-[#4a4a4a] w100 h3">
-          <span>
-            BFCS is a premier cleaning company offering exceptional service and
-            customer satisfaction. We provide top-quality commercial and
-            domestic cleaning solutions.
-          </span>
-          <span>
-            For homeowners, we offer flexible and efficient cleaning services
-            tailored to your specific needs. Choose from one-off cleans, weekly,
-            or fortnightly packages.
-          </span>
-          <span>
-            Our commercial cleaning services cater to a wide range of
-            businesses, including offices, schools, supermarkets, and cinemas.
-            We guarantee a high standard of service and professionalism for
-            every project.
-          </span>
-          <span>
-            Whether you're seeking domestic or commercial cleaning, selecting
-            BFCS means you'll receive expert services from one of the most
-            trusted cleaning companies in the industry.
-          </span>
-        </p>
-        <div className="flex gap-[15px]">
-          <div data-aos="fade-right">
-            <a
-              href="/contactUs"
-              className="flex place-items-center justify-between px-4 py-2 text-[15px] btnMobileW bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
-            >
-              <p>BOOK ONLINE</p>
-            </a>
-          </div>
-          <div data-aos="fade-left">
-            <a
-              href="/contactUs"
-              className="flex place-items-center justify-between px-4 py-2 btnMobileW text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
-            >
-              <p>CONTACT US</p>
-            </a>
+      <div className="p-[50px] font-family p20">
+        <div className="flex flex-col justify-center place-items-center gap-[20px]">
+          <h1 className="text-[30px] text-[#005883] font-bold h1">
+            WELCOME TO BFCS
+          </h1>
+          <p className="w-[50%] text-[16px] flex flex-col gap-[20px] text-justify text-[#4a4a4a] w100 h3">
+            <span>
+              BFCS is a premier cleaning company offering exceptional service
+              and customer satisfaction. We provide top-quality commercial and
+              domestic cleaning solutions.
+            </span>
+            <span>
+              For homeowners, we offer flexible and efficient cleaning services
+              tailored to your specific needs. Choose from one-off cleans,
+              weekly, or fortnightly packages.
+            </span>
+            <span>
+              Our commercial cleaning services cater to a wide range of
+              businesses, including offices, schools, supermarkets, and cinemas.
+              We guarantee a high standard of service and professionalism for
+              every project.
+            </span>
+            <span>
+              Whether you're seeking domestic or commercial cleaning, selecting
+              BFCS means you'll receive expert services from one of the most
+              trusted cleaning companies in the industry.
+            </span>
+          </p>
+          <div className="flex gap-[15px]">
+            <div>
+              <a
+                href="/contactUs"
+                className="flex place-items-center justify-between px-4 py-2 text-[15px] btnMobileW bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+              >
+                <p>BOOK ONLINE</p>
+              </a>
+            </div>
+            <div>
+              <a
+                href="/contactUs"
+                className="flex place-items-center justify-between px-4 py-2 btnMobileW text-[15px] bg-[#005883] font-semibold text-white hover:scale-105 hover:text-white rounded-sm"
+              >
+                <p>CONTACT US</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       {/* ABOUT US */}
 
-      <div
-        data-aos="fade-down"
-        className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]"
-      >
+      <div className="bg-[#ebebeb87] flex flex-col justify-center place-items-center px-[50px] py-[20px] gap-[30px] w-[100%]">
         <h1 className="text-[30px] text-[#005883] font-bold h1">ABOUT US</h1>
         <div className="flex flex-col gap-[40px]">
           <div className="flex gap-[50px] justify-center aboutiMG">
             <img
               src={img1}
-              data-aos="fade-right"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
             <img
               src={img2}
-              data-aos="zoom-out"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
             <img
               src={img3}
-              data-aos="fade-left"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
@@ -109,19 +102,16 @@ const Home = () => {
           <div className="flex gap-[50px] justify-center aboutiMG">
             <img
               src={img5}
-              data-aos="fade-right"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
             <img
               src={img6}
-              data-aos="zoom-out"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
             <img
               src={img4}
-              data-aos="fade-left"
               className="w-[20%] hover:scale-105 rounded-2xl"
               alt=""
             />
@@ -141,7 +131,7 @@ const Home = () => {
           <h1 data-aos="fade-right" className="text-[25px] h1">
             WHY CHOOSE BFCS?
           </h1>
-          <ul className="list flex flex-col gap-[15px] text-justify h3">
+          <ul className="list flex flex-col gap-[15px] text-justify h3 p5">
             <li data-aos="fade-right">
               Proven Expertise: Benefit from our years of experience in
               providing exceptional cleaning services.

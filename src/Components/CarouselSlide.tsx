@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Carousel } from "antd";
 import img1 from "../assets/Carousel.jpg";
 import img2 from "../assets/FloorMopping.jpg";
 import img3 from "../assets/GlassClean.jpg";
-import AOS from "aos";
 import logo from "../assets/BFCS LOGO/BFCS LOGO.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import Forms from "./Form";
@@ -19,22 +18,12 @@ const contentStyle: React.CSSProperties = {
 };
 
 const CarouselSlide: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 500 });
-  }, []);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <Carousel autoplay style={{ fontFamily: "SUSE" }}>
       <div className="relative">
-        <img src={img1} className="w-full" style={contentStyle} />
+        <img src={img1} className="w-[100%]" style={contentStyle} />
         <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%] carouselBg">
-          <div
-            data-aos="fade-right"
-            className="flex flex-col px-[5%] gap-[20px] justify-center p-5 mt-[150px] carouselItems"
-          >
+          <div className="flex flex-col px-[5%] gap-[20px] justify-center p-5 mt-[150px] carouselItems">
             <img src={logo} className="w-[10%]" alt="" />
             <h1 className="text-[70px] text-white font-extrabold line-height">
               LET US HANDLE <br /> YOUR CLEANING!
@@ -50,11 +39,11 @@ const CarouselSlide: React.FC = () => {
         </div>
       </div>
       <div className="relative">
-        <img src={img2} className="w-full" style={contentStyle} />
-        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-full">
+        <img src={img2} className="w-[100%]" style={contentStyle} />
+        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%]">
           <div className="flex px-[5%] flex-col gap-[20px] justify-center p-5 mt-[150px] carouselItems">
             <img src={logo} className="w-[10%]" alt="" />
-            <div data-aos="fade-right" className="flex flex-col gap-[5px] ">
+            <div className="flex flex-col gap-[5px] ">
               <h1 className="text-[70px] text-white font-extrabold">
                 WHY CHOOSE US
               </h1>
@@ -83,12 +72,9 @@ const CarouselSlide: React.FC = () => {
         </div>
       </div>
       <div className="relative">
-        <img src={img3} className="w-full" style={contentStyle} />
-        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-full">
-          <div
-            data-aos="fade-right"
-            className="flex gap-[50px] px-[5%] mt-[150px] w-[100%] justify-center carouselItems carouselItemsform"
-          >
+        <img src={img3} className="w-[100%]" style={contentStyle} />
+        <div className="bg-black absolute top-0 bg-opacity-45 h-[100vh] w-[100%]">
+          <div className="flex gap-[50px] px-[5%] mt-[150px] w-[100%] justify-center carouselItems carouselItemsform">
             <div className="hide show justify-center">
               <img src={logo} className="w-[10%]" alt="" />
             </div>

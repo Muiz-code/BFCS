@@ -18,10 +18,6 @@ body {
   list-style-type: square;
 }
 
-.navbar {
-  @apply flex justify-between items-center p-4 bg-gray-100;
-}
-
 .menu {
   @apply list-none flex;
 }
@@ -46,6 +42,9 @@ body {
 }
 
 @media (max-width: 488px) {
+  nav {
+    width: 80%;
+  }
   .submenu {
     @apply absolute bg-white shadow-md top-[80px];
   }
@@ -61,6 +60,10 @@ body {
   }
   .h4 {
     font-size: 20px;
+  }
+  .jb {
+    display: flex;
+    justify-content: space-between;
   }
 
   .px {
@@ -90,6 +93,9 @@ body {
   }
   .w100 {
     width: 100%;
+  }
+  .w10 {
+    width: 10%;
   }
   .h50vh {
     height: 50vh;

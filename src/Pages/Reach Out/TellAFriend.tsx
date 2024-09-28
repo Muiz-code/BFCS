@@ -1,8 +1,18 @@
 import logo from "../../assets/BFCS LOGO/BFCS LOGO.png";
 import img7 from "../../assets/TellAFriend.jpg";
 import TellaFriend from "../../Components/TellAFriend";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TellAFriend = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div>
@@ -22,23 +32,32 @@ const TellAFriend = () => {
           <img src={img7} className="w-screen h-[100vh] h50vh" alt="" />
         </div>
       </div>
-      <div className="bg-[#ebebeb87] py-[30px]">
-        <h1 className="text-[30px] text-center text-[#005883] font-bold h4">
+      <div
+        data-aos="zoom-out"
+        className="bg-[#ebebeb87] py-[30px] flex flex-col gap-5"
+      >
+        <h1
+          data-aos="fade-down"
+          className="text-[30px] text-center text-[#005883] font-bold h4"
+        >
           REFER A FRIEND
         </h1>
-        <h2 className="text-[25px] text-center text-[#005883] font-bold h2">
+        <h2
+          data-aos="fade-down"
+          className="text-[25px] text-center text-[#005883] font-bold h2"
+        >
           IT PAYS TO GOSSIP
         </h2>
-        <div className="px-[5%]">
+        <div data-aos="fade-right" className="px-[5%]">
           <p className="text-justify">
             If you’re an existing customer of ours and love what we do, why not
             recommend us to your friends and family. You can refer us to as many
             people as you want. If your referral signs up to our regular
-            cleaning service*, we will return the favour with a bonus
+            cleaning service, we will return the favour with a bonus
           </p>
           <div>
             <p>How it works:</p>
-            <ul className="list">
+            <ul className="list p5">
               <li className="list">
                 All they have to do is mention your name and address. it’s that
                 easy.
@@ -57,14 +76,14 @@ const TellAFriend = () => {
           </div>
         </div>
       </div>
-      <div className="px-[5%] bg-[#ebebeb87]">
+      <div data-aos="zoom-out" className="px-[5%] bg-[#ebebeb87]">
         <TellaFriend
           width="w-[100%] w100 "
           inputWidth="w-full"
           inputWidth1="py-4"
           radioStyle="flex gap-3"
           terms="I agree that the Company can use my details to contact me in regards to my enquiry and for future promotions."
-          heading="*Terms: Please note that your referral has to sign up for our regular cleaning service for a minimum of 6 months."
+          heading="Terms: Please note that your referral has to sign up for our regular cleaning service for a minimum of 6 months."
           formFields={[
             {
               label: "Full Name",

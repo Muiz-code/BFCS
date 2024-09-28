@@ -84,7 +84,10 @@ const TellaFriend: React.FC<FormsProps> = ({
       className={`p-5 flex flex-col justify-center place-items-center rounded-2xl gap-[10px] ${width}`}
       validateMessages={validateMessages}
     >
-      <h1 className="font-bold text-[#3a3b3b]">{heading}</h1>
+      <h1 className="font-bold text-[#3a3b3b]">
+        <span className="text-[red]">*</span>
+        {heading}
+      </h1>
       {formFields.map((field: FormField) => (
         <Form.Item
           key={field.name}
@@ -93,11 +96,12 @@ const TellaFriend: React.FC<FormsProps> = ({
           className={`${inputWidth}`}
         >
           {field.type === "radio" ? (
-            <div className={`${radioStyle} h3`}>
+            <div className={`${radioStyle} h3 flex flex-col`}>
               <label>{field.label}</label>
               <Radio.Group
                 value={formValues[field.name]}
                 onChange={(e) => handleInputChange(field.name, e.target.value)}
+                className="flex place-items-center"
               >
                 {field.options?.map((option) => (
                   <Radio key={option} value={option} className="h3">
@@ -110,14 +114,14 @@ const TellaFriend: React.FC<FormsProps> = ({
             <Input.TextArea
               rows={field.rows || 4}
               placeholder={field.placeholder}
-              className={`${inputWidth1} py-2`}
+              className={`${inputWidth1} py-2 h3`}
               value={formValues[field.name]}
               onChange={(e) => handleInputChange(field.name, e.target.value)}
             />
           ) : (
             <Input
               placeholder={field.placeholder}
-              className={`${inputWidth1} py-2`}
+              className={`${inputWidth1} py-2 h3`}
               value={formValues[field.name]}
               onChange={(e) => handleInputChange(field.name, e.target.value)}
             />

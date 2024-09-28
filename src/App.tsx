@@ -19,7 +19,7 @@ import JoinOurTeamForm from "./Pages/Reach Out/JoinUs";
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Navbar />}>
+      <Route element={<Navbar />}>
         <Route path="/" element={<Home />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/service" element={<Service />} />

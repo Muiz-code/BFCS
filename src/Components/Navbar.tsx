@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import logo from "../assets/BFCS LOGO/BFCS III.png";
 import MenuItem from "antd/es/menu/MenuItem";
 import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 import { Button, Drawer } from "antd";
-import { Outlet } from "react-router-dom";
 import { DownOutlined } from "@ant-design/icons";
+import ContentOutlet from "../MainContent/ContentOutlet";
 
 interface MenuItem {
   children: any;
@@ -98,10 +96,7 @@ const items: MenuItem[] = [
 ];
 
 const Navbar: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 500 });
-  }, []);
-
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -182,9 +177,9 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full">
+    <div className="w-screen flex flex-col">
       <nav
-        className="flex px-[5%] px2 py-5 justify-between place-items-center  w-[100%] fixed z-[1000] bg-white"
+        className="flex px-[5%] px2 py-5 justify-between place-items-center w-[100%] bg-white fixed z-[1000]"
         id="navbar-menu"
       >
         <div className="w-[15%]">
@@ -192,23 +187,24 @@ const Navbar: React.FC = () => {
             <img src={logo} className="w-[50%] w100 logo" alt="BFCS LOGO III" />
           </a>
         </div>
-        <ul className="flex gap-10 gap menu h2 none lg:flex">
+        <ul className="flex gap-10 menu h2 none lg:flex">
           {renderMenuItems(items)}
         </ul>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden ml-auto">
           <Button onClick={showDrawer} className="border-0 bg-none">
             <ViewQuiltIcon style={{ color: "black", fontSize: "25px" }} />
           </Button>
           <Drawer onClose={onClose} open={open}>
-            <ul className="flex flex-col  gap-[30px] mt-[100px] menu">
+            <ul className="flex flex-col gap-[30px] mt-[100px] menu">
               {renderMenuItems(items)}
             </ul>
           </Drawer>
         </div>
       </nav>
-      <div className="w-[100%]">
-        <Outlet />
+
+      <div>
+        <ContentOutlet />
       </div>
     </div>
   );
