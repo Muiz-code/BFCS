@@ -6,7 +6,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from "./Pages/Dashboard/Home";
-import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import ContactUs from "./Pages/Reach Out/ContactUs";
 import Service from "./Pages/Services/Service";
@@ -16,26 +15,25 @@ import TellAFriend from "./Pages/Reach Out/TellAFriend";
 import Blog from "./Pages/Blog/Blog";
 import JoinOurTeamForm from "./Pages/Reach Out/JoinUs";
 
-function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route element={<Navbar />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/contactUs" element={<ContactUs />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/aboutUs" element={<About />} />
-        <Route path="/clientreview" element={<ClientReview />} />
-        <Route path="/tellafriend" element={<TellAFriend />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/joinourteam" element={<JoinOurTeamForm />} />
-      </Route>
-    )
-  );
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Navbar />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/contactUs" element={<ContactUs />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/aboutUs" element={<About />} />
+      <Route path="/clientreview" element={<ClientReview />} />
+      <Route path="/tellafriend" element={<TellAFriend />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/joinourteam" element={<JoinOurTeamForm />} />
+    </Route>
+  )
+);
 
+function App() {
   return (
     <div>
       <RouterProvider router={router} />
-      <Footer />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import ViewQuiltIcon from "@mui/icons-material/ViewQuilt";
 import { Button, Drawer } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import ContentOutlet from "../MainContent/ContentOutlet";
+import Footer from "./Footer";
 
 interface MenuItem {
   children: any;
@@ -96,7 +97,6 @@ const items: MenuItem[] = [
 ];
 
 const Navbar: React.FC = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -205,6 +205,9 @@ const Navbar: React.FC = () => {
 
       <div>
         <ContentOutlet />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
